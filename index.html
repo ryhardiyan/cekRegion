@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stalking ML - MariTopup (Rahardiyan)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <a href="https://maritopup.web.id/" class="logo">MariTopup</a>
+  </header>
+
+  <div class="container">
+    <div class="info-text">
+      <h2>Cek Username & Region Mobile Legends</h2>
+      <p>Masukkan ID dan Server untuk mendapatkan informasi username dan region.</p>
+    </div>
+    <form id="stalkForm">
+      <label for="user_id">ID Mobile Legends</label>
+      <input type="text" id="user_id" name="user_id" placeholder="Masukkan User ID" required>
+
+      <label for="zone_id">Server Mobile Legends</label>
+      <input type="text" id="zone_id" name="zone_id" placeholder="Masukkan Zone ID" required>
+
+      <button type="submit">Cek Username</button>
+    </form>
+
+    <div id="result" class="result">
+      <p><strong>ID:</strong> <span id="resultUserId"></span></p>
+      <p><strong>Server:</strong> <span id="resultZoneId"></span></p>
+      <p><strong>Nickname:</strong> <span id="resultNick"></span></p>
+      <p><strong>Region:</strong> <span id="resultRegion"></span></p>
+      <p><strong>Author:</strong> Rahardiyan MariTopup</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
